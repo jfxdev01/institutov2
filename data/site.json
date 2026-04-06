@@ -1,0 +1,164 @@
+{
+  "site": {
+    "name": "Instituto V2",
+    "shortDescription": "Saúde, estética e odontologia em Maceió: tecnologia, ciência e cuidado humanizado.",
+    "phone": "(82) 99680-6210",
+    "whatsappDigits": "5582996806210",
+    "email": "contato@institutov2.com.br",
+    "addressLine": "Rua Afonso Pena 112",
+    "city": "Maceió",
+    "state": "AL",
+    "cep": "57051-040",
+    "hours": "Segunda a Sexta: 8h às 18h | Sábado: 8h às 12h",
+    "instagramUrl": "https://www.instagram.com/institutov2/",
+    "facebookUrl": "",
+    "mapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.2817349897714!2d-35.73380240000001!3d-9.656951099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7014522b0cde035%3A0xf519866e3c871ab4!2sInstituto%20V2%20-%20Sa%C3%BAde%20-%20Est%C3%A9tica%20-%20Odontologia!5e0!3m2!1spt-BR!2sbr!4v1775259401949!5m2!1spt-BR!2sbr"
+  },
+  "hero": {
+    "badge": "Tecnologia, ciência e cuidado humanizado",
+    "title": "Experiência completa em saúde, estética e odontologia",
+    "subtitle": "Mais que uma clínica: integramos diferentes áreas em um ambiente sofisticado e acolhedor, com foco em resultados naturais, segurança e bem-estar.",
+    "highlightStat": {
+      "value": "+500",
+      "label": "Pacientes atendidos"
+    },
+    "visualImageUrl": "/uploads/img-1775259752840-42pp6y.png",
+    "visualEmoji": "",
+    "visualCaption": ""
+  },
+  "mission": "Promover saúde, beleza e bem-estar por meio de tratamentos seguros e personalizados, baseados em evidência, elevando a autoestima e a qualidade de vida dos nossos pacientes.",
+  "about": {
+    "title": "Sobre o Instituto V2",
+    "paragraphs": [
+      "O Instituto V2 é um espaço voltado à saúde, à estética e à odontologia, criado para oferecer atendimento de alta qualidade que alia tecnologia, conhecimento científico e cuidado humanizado.",
+      "Somos mais que uma clínica: proporcionamos uma experiência completa ao paciente, integrando diferentes áreas em um único ambiente, com profissionais qualificados e em constante atualização. Seguimos um conceito atual que valoriza autoestima, confiança e resultados seguros e naturais."
+    ],
+    "highlights": [
+      "Ambiente sofisticado e confortável",
+      "Equipe multidisciplinar e atualizada",
+      "Tratamentos personalizados e baseados em evidências",
+      "Odontologia completa: clínica, estética e ortodontia",
+      "Estética avançada e cuidados integrados",
+      "Psicologia clínica para adultos e crianças"
+    ],
+    "experienceYears": "4+",
+    "patientsLabel": "Pacientes acolhidos",
+    "sectionImageUrl": "/uploads/img-1775259633099-mn732f.png"
+  },
+  "specialtiesIntro": "Reunimos serviços especializados em fisioterapia, estética avançada, psicologia, odontologia e bem-estar — tudo pensado para o seu conforto e resultados naturais.",
+  "specialties": [
+    {
+      "id": "fisio",
+      "title": "Fisioterapia e quiropraxia",
+      "description": "Cuidados com a coluna, postura e recuperação funcional com acompanhamento especializado.",
+      "icon": "activity"
+    },
+    {
+      "id": "estetica",
+      "title": "Estética avançada",
+      "description": "Da limpeza de pele e tratamentos faciais a preenchimentos, bioestimuladores, toxina botulínica e tratamento de gordura localizada.",
+      "icon": "sparkles"
+    },
+    {
+      "id": "psico",
+      "title": "Psicologia clínica",
+      "description": "Atendimento para adultos e crianças, avaliação psicológica e orientação vocacional e profissional.",
+      "icon": "brain"
+    },
+    {
+      "id": "odonto",
+      "title": "Odontologia completa",
+      "description": "Estética e clínica com implantes, facetas, restaurações, limpeza, aclareamento e ortodontia.",
+      "icon": "smile"
+    },
+    {
+      "id": "masso",
+      "title": "Massoterapia e estética básica",
+      "description": "Massagens e cuidados essenciais para relaxamento e manutenção da pele.",
+      "icon": "heart"
+    },
+    {
+      "id": "beauty",
+      "title": "Beauty e autocuidado",
+      "description": "Design de sobrancelhas, brow lamination, cílios, extensão de unhas, manicure e cuidados com os pés.",
+      "icon": "scissors"
+    }
+  ],
+  "professionalsIntro": "Profissionais dedicados a uma jornada de saúde e estética integrada, com atendimento próximo e seguro.",
+  "professionals": [
+    {
+      "id": "lucas-rodrigues",
+      "name": "Lucas Rodrigues",
+      "role": "Fisioterapia e quiropraxia",
+      "credentials": "",
+      "bio": "Atendimento em fisioterapia e quiropraxia para mobilidade, postura e bem-estar.",
+      "photoUrl": "/uploads/img-1775258662317-x22xaj.png"
+    },
+    {
+      "id": "valeria-durandao",
+      "name": "Dra. Valéria Durandão",
+      "role": "Estética avançada",
+      "credentials": "",
+      "bio": "Procedimentos que vão da limpeza de pele e tratamentos faciais a técnicas mais avançadas, como preenchimentos, bioestimuladores, toxina botulínica e gordura localizada.",
+      "photoUrl": "/uploads/img-1775258584992-55zzoe.png"
+    },
+    {
+      "id": "vitor-correia",
+      "name": "Dr. Vitor Correia",
+      "role": "Odontologia estética e clínica",
+      "credentials": "CRO/AL",
+      "bio": "Odontologia estética e clínica com foco em sorriso harmônico e saúde bucal integral.",
+      "photoUrl": "/uploads/img-1775257678112-cnmaop.png"
+    },
+    {
+      "id": "felipe-lins",
+      "name": "Dr. Felipe Lins",
+      "role": "Odontologia clínica",
+      "credentials": "CRO/AL",
+      "bio": "Atendimento clínico em odontologia, em conjunto com a equipe do instituto.",
+      "photoUrl": "/uploads/img-1775258693672-nu5m2j.png"
+    },
+    {
+      "id": "enisa",
+      "name": "Enisa",
+      "role": "Massoterapia e estética básica",
+      "credentials": "",
+      "bio": "Massoterapia e estética básica para relaxamento e cuidados essenciais.",
+      "photoUrl": ""
+    },
+    {
+      "id": "virginia-brandao",
+      "name": "Virgínia Brandão",
+      "role": "Beauty — sobrancelhas, cílios e unhas",
+      "credentials": "",
+      "bio": "Design de sobrancelhas, eyebrow lamination, extensão de cílios, extensão de unha, manicure, pé de cura e spa dos pés.",
+      "photoUrl": ""
+    }
+  ],
+  "testimonialsIntro": "A satisfação dos nossos pacientes é nossa maior recompensa.",
+  "testimonials": [
+    {
+      "id": "t1",
+      "quote": "Atendimento acolhedor e equipe muito profissional. Me senti segura em todos os procedimentos.",
+      "author": "Paciente",
+      "role": "Avaliação Google"
+    },
+    {
+      "id": "t2",
+      "quote": "Ambiente lindo e confortável. Adorei poder resolver estética e odontologia no mesmo lugar.",
+      "author": "Paciente",
+      "role": "Avaliação Google"
+    },
+    {
+      "id": "t3",
+      "quote": "Profissionais atentos e explicam tudo com clareza. Resultados naturais como eu queria.",
+      "author": "Paciente",
+      "role": "Avaliação Google"
+    }
+  ],
+  "seo": {
+    "title": "Instituto V2 | Saúde, Estética e Odontologia em Maceió — AL",
+    "description": "Instituto multidisciplinar em Maceió: saúde, estética e odontologia integradas. Equipe especializada, ambiente sofisticado e tratamentos personalizados.",
+    "keywords": "instituto v2, maceió, saúde, estética, odontologia, fisioterapia, psicologia, clínica"
+  }
+}

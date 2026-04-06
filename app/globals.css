@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-sage: #8c9975;
+    --brand-taupe: #89836d;
+    --brand-black: #000000;
+    /* Fallback quando ITC Avant Garde não estiver instalada localmente */
+    --font-fallback-condensed: "Century Gothic", "AppleGothic", sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-serif font-bold text-black mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-accent-700 max-w-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-primary-600 px-6 py-3 text-white font-medium shadow-sm transition-colors hover:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-primary-600 bg-white px-6 py-3 text-primary-800 font-medium transition-colors hover:bg-primary-50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-accent-200 bg-white shadow-sm transition-shadow hover:shadow-md;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-accent-800 mb-1;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-accent-200 px-4 py-3 text-black outline-none transition focus:border-primary-500 focus:ring-2 focus:ring-primary-100;
+  }
+
+  .site-header-brand {
+    @apply flex items-center gap-3 text-black no-underline;
+  }
+
+  .site-header-mark {
+    @apply rounded-full object-cover shrink-0;
+  }
+
+  .site-header-text {
+    @apply flex flex-col leading-tight;
+  }
+
+  .site-header-name {
+    @apply text-sm font-bold tracking-wide font-sans;
+  }
+
+  .site-header-brand--footer .site-header-name--footer {
+    @apply text-base text-white font-sans;
+  }
+}
