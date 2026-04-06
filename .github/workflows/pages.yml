@@ -34,6 +34,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_STATIC_EXPORT: "1"
+          NEXT_PUBLIC_BASE_PATH: "/institutov2"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

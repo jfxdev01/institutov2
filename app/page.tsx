@@ -13,6 +13,7 @@ import {
 import { readSiteData } from "@/lib/content";
 import { IconFor } from "@/components/IconFor";
 import { ProfessionalCard } from "@/components/ProfessionalCard";
+import { withBasePath } from "@/lib/basePath";
 
 export default async function HomePage() {
   const data = await readSiteData();
@@ -70,7 +71,7 @@ export default async function HomePage() {
               <div className="relative w-full h-[500px] bg-gradient-to-br from-primary-200 to-accent-200 rounded-3xl overflow-hidden">
                 {hero.visualImageUrl ? (
                   <Image
-                    src={hero.visualImageUrl}
+                    src={withBasePath(hero.visualImageUrl)}
                     alt=""
                     fill
                     className="object-cover"
@@ -170,7 +171,7 @@ export default async function HomePage() {
                 <div className="relative w-full h-[400px] bg-gradient-to-br from-primary-300 to-accent-300 rounded-3xl overflow-hidden">
                   {about.sectionImageUrl ? (
                     <Image
-                      src={about.sectionImageUrl}
+                      src={withBasePath(about.sectionImageUrl)}
                       alt=""
                       fill
                       className="object-cover"

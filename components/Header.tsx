@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
 import type { SiteData } from "@/lib/types";
+import { withBasePath } from "@/lib/basePath";
 
 const nav = [
   { href: "/", label: "Início" },
@@ -28,7 +29,7 @@ export function Header({ site }: { site: SiteData["site"] }) {
           aria-label="Instituto V2 — Saúde, Estética e Odontologia"
         >
           <Image
-            src="/logov2.png"
+            src={withBasePath("/logov2.png")}
             alt=""
             width={52}
             height={52}

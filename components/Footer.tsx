@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Clock, Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import type { SiteData } from "@/lib/types";
+import { withBasePath } from "@/lib/basePath";
 
 const quick = [
   { href: "/sobre", label: "Sobre Nós" },
@@ -21,7 +22,7 @@ export function Footer({ site }: { site: SiteData["site"] }) {
           <div>
             <div className="site-header-brand site-header-brand--footer mb-4">
               <Image
-                src="/logov2.png"
+                src={withBasePath("/logov2.png")}
                 alt=""
                 width={56}
                 height={56}

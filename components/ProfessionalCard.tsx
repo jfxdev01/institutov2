@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { UserRound } from "lucide-react";
 import type { Professional } from "@/lib/types";
+import { withBasePath } from "@/lib/basePath";
 
 export function ProfessionalCard({ p }: { p: Professional }) {
   return (
@@ -8,7 +9,7 @@ export function ProfessionalCard({ p }: { p: Professional }) {
       <div className="h-56 bg-gradient-to-br from-primary-200 to-accent-200 relative overflow-hidden">
         {p.photoUrl ? (
           <Image
-            src={p.photoUrl}
+            src={withBasePath(p.photoUrl)}
             alt={p.name}
             fill
             className="object-cover"
