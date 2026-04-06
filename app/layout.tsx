@@ -6,7 +6,8 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { readSiteData } from "@/lib/content";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const revalidate = false;
 
 const dmSerif = DM_Serif_Display({
   weight: "400",

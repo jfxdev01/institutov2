@@ -1,12 +1,19 @@
 import { NextResponse } from "next/server";
-import { writeFile, mkdir } from "fs/promises";
 import path from "path";
-import { cookies } from "next/headers";
-import { getAdminCookieName, verifyAdminToken } from "@/lib/auth";
 
 const MAX = 5 * 1024 * 1024;
 
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export async function POST(request: Request) {
+  if (process.env.NEXT_PUBLIC_STATIC_EXPORT === "1") {
+    return NextResponse.json({ error: "Desabilitado no GitHub Pages" }, { status: 404 });
+  }
+  const [{ cookies }, { getAdminCookieName, verifyAdminToken }] = await Promise.all([
+    import("next/headers"),
+    import("@/lib/auth"),
+  ]);
   const jar = await cookies();
   const token = jar.get(getAdminCookieName())?.value;
   if (!verifyAdminToken(token)) {
@@ -32,6 +39,7 @@ export async function POST(request: Request) {
     : ".jpg";
   const name = `img-${Date.now()}-${Math.random().toString(36).slice(2, 8)}${safeExt}`;
   const dir = path.join(process.cwd(), "public", "uploads");
+  const { mkdir, writeFile } = await import("fs/promises");
   await mkdir(dir, { recursive: true });
   const buf = Buffer.from(await file.arrayBuffer());
   await writeFile(path.join(dir, name), buf);

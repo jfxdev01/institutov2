@@ -1,11 +1,15 @@
 import { NextResponse } from "next/server";
-import {
-  createAdminToken,
-  getAdminCookieName,
-  verifyAdminPassword,
-} from "@/lib/auth";
+
+export const dynamic = "force-static";
+export const revalidate = false;
 
 export async function POST(request: Request) {
+  if (process.env.NEXT_PUBLIC_STATIC_EXPORT === "1") {
+    return NextResponse.json({ error: "Desabilitado no GitHub Pages" }, { status: 404 });
+  }
+  const { createAdminToken, getAdminCookieName, verifyAdminPassword } = await import(
+    "@/lib/auth"
+  );
   try {
     const body = (await request.json()) as { password?: string };
     if (!body.password || !verifyAdminPassword(body.password)) {
